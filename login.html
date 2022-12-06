@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="sign-in.css">
+</head>
+<body>  
+    <main>
+        <div class="login">
+            <form autocomplete="off" action="swipe.html" method="post">
+            <img src="simbolos-religiosos.png">
+            <h1>Login</h1>
+            <div id="msggError"></div>
+            <label for="e-mail">E-mail:</label>
+            <input type="email" placeholder="E-mail" class="boto" id="email"> <br>
+            <small id="textEmail"></small><br>
+            <label for="password">Senha:</label>
+            <input type="password" placeholder="Senha" class="boto" id="senha"> <br>
+            <small id="textPassword"></small><br>
+            <button id="botao" onclick="entrar();">Entrar</button>
+            <p>Não possui uma conta? <a href="sign-up.html">Clique aqui.</a></p>
+        </form>
+        <small id="textForm"></small>
+        </div>
+    </main>
+    <script src="loginomg.js"></script>
+</body>
+</html>

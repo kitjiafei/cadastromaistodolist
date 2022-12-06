@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Sign up</title>
+    <link rel="stylesheet" href="sign-up.css">
+</head>
+<body>
+    <main>
+       
+        <div class="sign-up">  
+            <form autocomplete="off" onclick="TudoOK();">
+            <img src="simbolos-religiosos.png">
+            <h1>Login</h1>
+            <label for="email">E-mail:</label>
+            <input type="email" placeholder="Digite seu e-mail" class="boto" id="email"><br>
+            <small id="textEmail"></small> <br>
+            <label for="senha">Senha:</label>
+            <input type="password" placeholder="Digite sua senha" class="boto" id="senha" minlength="5" maxlength="15" onchange="confereSenha();"><br>
+            <small id="textPassword"></small> <br>
+            <label for="senha">Confirmar Senha:</label>
+            <input type="password" placeholder="Confirme sua senha" class="boto" id="confirma_senha" minlength="5" maxlength="15" onchange="confereSenha();"><br> <small id="textPassword2"></small><br>
+            <button type="submit">Enviar</button>
+            <small id="textForm"></small>
+            <div id="msgSucesso"></div>
+        </form>
+        </div>
+        
+    
+    </main>
+<script src="registro.js"></script>
+</body>
+</html>

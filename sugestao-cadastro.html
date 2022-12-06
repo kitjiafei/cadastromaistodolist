@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatos com religiões</title>
+    <link rel="stylesheet" href="meow.css">
+    <div id="ao" class="oao"> 
+        <header>
+            <nav>
+                <h1 class="logo" href="/"><img id="eita" src="simbolos-religiosos.png"></h1>
+                <div class="mobile-menu">
+                <div class="linha1"></div>
+                <div class="linha2"></div>
+                <div class="linha3"></div>
+                </div>
+                <ul class="lista">
+                    <li><a href="cats.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="dados.html">Seus dados</a></li>
+                    <li><button onclick="sair();" id="but">Sair</button></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    
+    <script src="semor.js"></script>
+</head>
+<body>
+    <main>
+    <div id="cadastro">
+        <p id="oi">Adicione possibilidade de gatinhos religiosos:</p> <ul id="alinha"><input text="caixa" class="caixa" id="bota"> </ul>
+        
+        <button onclick="Adicionar();" id="botao">Adicionar</button>
+        <script>
+            function Adicionar(){
+               const res= document.getElementById('bota').value;
+                const he1 = document.createElement('h1');
+                he1.innerHTML = res;
+                document.getElementById('cadastro').appendChild(he1);
+
+                const bRemover = document.createElement('button');
+                bRemover.innerHTML = "remover";
+                bRemover.addEventListener('click', function(){
+                    he1.remove();
+                })
+                he1.appendChild(bRemover);
+
+            }
+            
+        </script>
+    </div>
+    </main>
+</body>
+</html>
+
